@@ -1,1 +1,204 @@
+/*обнуления*/
+*{	padding: 0;	margin: 0;	border: 0;}
+    *,*:before,*:after{	-moz-box-sizing: border-box;-webkit-box-sizing: border-box;	box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{	height: 100%;	width: 100%;	font-size: 100%;	line-height: 1;	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*обнуления*/
+* {
+    box-sizing: border-box;
+    }
+body {
+    min-height: 100vh;
+    margin: 0; padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #4d2323;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("assets/fonts/Montserrat-Light.ttf");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("Montserrat-SemiBold.ttf");
+    font-weight: 600;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
+.conteiner {
+    max-width: 1440px;
+    margin: 0 auto;
+    
+  }
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+  .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .3s;
+  }
+  html {
+    scroll-behavior: smooth; 
+  }
+  .nav-item a {
+    color: #829985;
+    text-decoration: none;  
+    transition: color 0.3s;
+  }
+  .nav-item a:hover {
+    color: #cc03aa;
+  }
+  .header{
+    
+  }
+  .main{
+    margin: 10px 250px;
+  }
+  /*------main description------*/
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 10px 0;
+    
+  }
+  .main-section{
+    width: 80%;
+    display: flex;
+    flex-direction:row-reverse;
+    padding: 0 auto;
+    text-align: center;
+    margin: 0 0 65px 0;
+  }
+  
+  .main-section-title{
+    flex-basis:80%;
+    align-self:center;
+  }
+  
+  .name{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #829985;
+
+  }
+  .work{
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #cc03aa;
+  }
+  .main-section img{
+    flex-basis:20%;
+    padding: 0 200px;
+    align-self:center;
+  }
+  /*------main description------*/
+
+  /*------expirience------*/
+    .section {
+    width: 50%;
+  }
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+  .section-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #829985;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .section-title::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid #829985;
+    border-radius: 50%;
+  }
+  .contacts{
+    padding: 0 0 30px 27px;
+  }
+  .tech-skills-list{
+    padding: 0 0 30px 27px;
+  }
+  #summary p{
+    padding: 0 0 30px 27px;
+  }
+  .education-experience{
+    letter-spacing: 5px;
+    color: #cc03aa;
+    position: relative;
+    padding-left: 27px;
+  }
+  .experience{
+    padding: 0 0 30px 27px;
+  }
+  #languages h4{
+    letter-spacing: 5px;
+    color: #cc03aa;
+    position: relative;
+    padding-left: 27px;
+  }
+  #languages p{
+    padding: 0 0 10px 27px;
+  }
+  /*------expirience------*/
+
+  /*------Footer-----*/
+  footer{
+    background-color: #829985;
+  }
+  .footer{
+    display: flex;
+    justify-content:space-around;
+    color: #fff;
+    margin: 15px;
+  }
+  .footer-git {
+    padding: 15px;
+  }
+  .footer-rss{
+    padding: 15px;
+  }
+  .footer-year{
+    text-align: center;
+    color: #fff;
+    margin: 15px ;
+  }
+  
